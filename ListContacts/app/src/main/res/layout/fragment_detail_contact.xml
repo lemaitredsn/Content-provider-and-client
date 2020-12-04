@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:titleTextColor="@color/white"
+        android:title="@string/detail_contact_title"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/nameContactTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Валентин"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numbers"
+            />
+        <TextView
+            android:id="@+id/numbersContactTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="89141112233"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:text="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/emailContactTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="test@t.ru"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawableTint="@color/white"
+            android:text="@string/delete"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

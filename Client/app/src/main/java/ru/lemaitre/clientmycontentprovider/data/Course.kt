@@ -1,0 +1,9 @@
+package ru.lemaitre.clientmycontentprovider.data
+
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
+data class Course(
+    val id: Long,
+    val title: String
+)

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ListContacts</string>
+    <string name="contact_list_title">Список контактов</string>
+    <string name="read_contacts_no_permission">Доступ к чтению контактов запрещен</string>
+    <string name="add_permission_on_option_app">Разрешите доступ к чтению контактов в настройках приложения</string>
+    <string name="enter_name">Имя</string>
+    <string name="enter_number">Телефон</string>
+    <string name="add_contact">Добавить</string>
+    <string name="add_contact_name_phone">Добавление контакта</string>
+    <string name="error_show">ошибка сохранения контакта</string>
+    <string name="exception_error">неизвестная ошибка</string>
+    <string name="detail_contact_title">Контакт: %s</string>
+    <string name="numbers">номера</string>
+    <string name="name">имя</string>
+    <string name="email">email</string>
+    <string name="delete">удалить</string>
+    <string name="fab">fab</string>
+    <string name="download_file">download file</string>
+    <string name="hint_edit_text">введите ссылку</string>
+    <string name="download">скачать</string>
+    <string name="nothing">ничего</string>
+    <string name="file_exists">файл уже существует</string>
+    <string name="success_download">%s - файл успешно скачан</string>
+    <string name="share_file">поделиться</string>
+    <string name="share_button">поделиться</string>
+</resources>

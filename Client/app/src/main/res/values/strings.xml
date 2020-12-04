@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ClientMyContentProvider</string>
+    <string name="enter_name_course">Введите имя курса</string>
+    <string name="enter_id_course">Введите id курса</string>
+    <string name="enter_correct_data">Проверьте введенные данные</string>
+</resources>

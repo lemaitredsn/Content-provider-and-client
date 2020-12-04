@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getAllCoursesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получить список курсов"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="введите id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getCourseOnIdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="получить курс по id"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="введите имя для нового курса"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addCourseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="добавить курс"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteCourseOnIdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="удалить курс по id"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteAllCoursesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="удалить все курсы"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateCourseOnIdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="обновить курс по ID"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_course"
+        />
+
+</LinearLayout>

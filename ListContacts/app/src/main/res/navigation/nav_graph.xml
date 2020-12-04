@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contactListFragment2">
+    <fragment
+        android:id="@+id/contactListFragment2"
+        android:name="ru.lemaitre.listcontacts.presentation.list.ContactListFragment"
+        android:label="ContactListFragment"
+        tools:layout="@layout/fragment_contact_list">
+        <action
+            android:id="@+id/action_contactListFragment2_to_contactAddFragment"
+            app:destination="@id/contactAddFragment" />
+        <action
+            android:id="@+id/action_contactListFragment2_to_detailContactFragment"
+            app:destination="@id/detailContactFragment" />
+        <action
+            android:id="@+id/action_contactListFragment2_to_fileFragment"
+            app:destination="@id/fileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactAddFragment"
+        android:name="ru.lemaitre.listcontacts.presentation.add.ContactAddFragment"
+        android:label="ContactAddFragment"
+        tools:layout="@layout/fragmnet_add_contact"
+        />
+    <fragment
+        android:id="@+id/detailContactFragment"
+        android:name="ru.lemaitre.listcontacts.presentation.detail.DetailContactFragment"
+        android:label="DetailContactFragment"
+        tools:layout="@layout/fragment_detail_contact"
+        >
+        <argument
+            android:name="contact"
+            app:argType="ru.lemaitre.listcontacts.data.Contact" />
+    </fragment>
+    <fragment
+        android:id="@+id/fileFragment"
+        android:name="ru.lemaitre.listcontacts.presentation.save.FileFragment"
+        tools:layout="@layout/fragment_file"
+        android:label="FileFragment" />
+
+</navigation>
